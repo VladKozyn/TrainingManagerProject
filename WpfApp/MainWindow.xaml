@@ -1,0 +1,36 @@
+﻿<Window x:Class="WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="418" Width="800">
+    <Grid>
+        <DataGrid Name="dataGrid1" Height="123" Width="auto" Margin="40,233,9.6,32" >
+            <DataGrid.Columns >
+                <DataGridTextColumn Width="30" Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Width="130" Header="When" Binding="{Binding When}"></DataGridTextColumn>
+                <DataGridTextColumn Width="55" Header="Distance" Binding="{Binding Distance}"></DataGridTextColumn>
+                <DataGridTextColumn Width="55" Header="Time" Binding="{Binding Time}"></DataGridTextColumn>
+                <DataGridTextColumn Width="90" Header="AverageSpeed" Binding="{Binding AverageSpeed}"></DataGridTextColumn>
+                <DataGridTextColumn Width="90" Header="AverageWatt" Binding="{Binding AverageWatt}"></DataGridTextColumn>
+                <DataGridTextColumn Width="80" Header="TrainingType" Binding="{Binding TrainingType}"></DataGridTextColumn>
+                <DataGridTextColumn Width="110" Header="Comments" Binding="{Binding Comments}"></DataGridTextColumn>
+                <DataGridTextColumn Width="70" Header="BikeType" Binding="{Binding BikeType}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+        <DataGrid Name="dataGrid2"  AutoGenerateColumns="True"  CanUserAddRows="True" Height="158
+                          " Width="auto" Margin="40,10,9.6,220" >
+            <DataGrid.Columns >
+                <DataGridTextColumn Width="30" Header="Id" Binding="{Binding Id}"></DataGridTextColumn>
+                <DataGridTextColumn Width="130" Header="When" Binding="{Binding When}"></DataGridTextColumn>
+                <DataGridTextColumn Width="55" Header="Distance" Binding="{Binding Distance}"></DataGridTextColumn>
+                <DataGridTextColumn Width="55" Header="Time" Binding="{Binding Time}"></DataGridTextColumn>
+                <DataGridTextColumn Width="90" Header="AverageSpeed" Binding="{Binding AverageSpeed}"></DataGridTextColumn>
+                <DataGridTextColumn Width="80" Header="TrainingType" Binding="{Binding TrainingType}"></DataGridTextColumn>
+                <DataGridTextColumn Width="110" Header="Comments" Binding="{Binding Comments}"></DataGridTextColumn>
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Window>
